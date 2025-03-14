@@ -1,0 +1,74 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0f172a;
+    color: #f8fafc;
+  }
+  
+  .hero {
+    background: linear-gradient(135deg, #1e3a8a, #0f172a);
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .tagline {
+    font-size: 1.2rem;
+    color: #94a3b8;
+  }
+  
+  .btn {
+    background: #3b82f6;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 1rem;
+  }
+  
+  /* Skills Grid */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .skill-item {
+    background: #1e293b;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .skill-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Projects Grid */
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .project-card {
+    background: #1e293b;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .project-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero {
+      padding: 2rem 1rem;
+    }
+  }
